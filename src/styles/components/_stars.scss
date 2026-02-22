@@ -9,7 +9,7 @@
     background-position: center;
     width: $star-size;
     height: $star-size;
-    margin-right: 4px;
+    margin-right: $star-gap;
   }
 
   &__star:last-child {
