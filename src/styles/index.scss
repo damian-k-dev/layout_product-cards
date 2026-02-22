@@ -1,5 +1,12 @@
+@use './utils/variables' as *;
+@use './components/card';
+@use './components/stars';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap';
+
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -7,37 +14,5 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-
-.card {
-  box-sizing: border-box;
-  width: 200px;
-
-  &__image {
-    display: block;
-    width: 100%;
-  }
-}
-
-.stars {
-  display: flex;
-
-  &__star {
-    background-image: url(../images/star.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-  }
-
-  &__star:last-child {
-    margin-right: 0;
-  }
-
-  @for $i from 1 through 5 {
-    &--#{$i} &__star:nth-child(-n + #{$i}) {
-      background-image: url(../images/star-active.svg);
-    }
-  }
+  background-color: #e5e5e5;
 }
