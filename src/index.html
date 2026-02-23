@@ -6,11 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <title>Product cards</title>
     <link
       rel="stylesheet"
       href="./styles/index.scss"
     />
-    <title>Product cards</title>
   </head>
   <body>
     <div class="wrapper">
@@ -20,7 +20,7 @@
       >
         <img
           class="card__image"
-          src="./images/imac.jpeg"
+          src="../src/images/imac.jpeg"
           alt="Apple iMac 27 inch Retina 5K"
         />
         <h2 class="card__description">
@@ -41,12 +41,13 @@
           <span class="card__label">Price:</span>
           <span class="card__value">$2,199</span>
         </div>
-        <button
+        <a
+          href="#"
           data-qa="hover"
           class="card__buy-button"
         >
           Buy
-        </button>
+        </a>
       </article>
     </div>
   </body>
