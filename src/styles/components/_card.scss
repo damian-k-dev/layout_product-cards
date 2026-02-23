@@ -1,7 +1,6 @@
 @use '../utils/variables' as *;
 
 .card {
-  box-sizing: border-box;
   width: $card-width;
   padding: $card-padding;
   border: 1px solid #f3f3f3;
