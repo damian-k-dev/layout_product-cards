@@ -3,15 +3,14 @@
 .card {
   width: $card-width;
   padding: $card-padding;
-  border: 1px solid #f3f3f3;
   border-radius: $card-radius;
   background-color: #fff;
 
   &__image {
     display: block;
     width: $card-image-width;
-    margin: 0 19px;
-    background-color: red;
+    height: 134px;
+    margin: 0 auto;
   }
 
   &__content {
@@ -22,7 +21,6 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 0;
     color: $main-accent;
     margin: 0;
   }
@@ -33,7 +31,7 @@
     line-height: 14px;
     color: $secondary;
     display: inline-block;
-    margin-top: 2px;
+    margin-top: 4px;
   }
 
   &__rating {
@@ -46,9 +44,7 @@
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 10px;
-    line-height: 14px;
     color: $main-accent;
-    vertical-align: center;
     align-self: flex-end;
   }
 
@@ -86,7 +82,7 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    border: 1px solid $border-light;
+    border: 1px solid $blue-accent;
     border-radius: $button-radius;
     background-color: $blue-accent;
     color: $white;
@@ -95,7 +91,7 @@
     &:hover {
       background-color: $white;
       color: $blue-accent;
-      border-color: $blue-accent;
+      border: 1px solid $blue-accent;
       cursor: pointer;
     }
   }
